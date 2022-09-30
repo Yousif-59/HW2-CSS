@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+a:hover {
+  background-color: yellow;
+}
+
+.flex-container{
+  /* float: left;
+  display: flex; */
+  background-color: #f1f1f1;
+  width: 88%;
+  margin: auto;
+  padding: 70px;
+  /* border: 3px solid #213fad */
+  border: 3px solid green;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 200px;
+
+}
+/* div{
+  margin-left: 50px;
+} */
+
+.mid-Left{
+  display: flex;
+  background-color: #f1f1f1;
+  width: 30%;
+  margin: 10px;
+  padding: 200px;
+  border: 3px solid #2131ad;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  gap: 12px;
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px;
+  gap: 12px;
+}
+
+.upper {
+  /* float: left; */
+
+  margin: 30px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 450px;
+  border: 5px rgb(90, 90, 90) solid;
+  justify-content: center;
+  text-align: left;
+  padding: 10px; /* this */
+}
+
+.upper > div {
+  flex: 1 1 auto;
+  border: 1px red solid;
+  background-color: #f1f1f1;
+  text-align: center;
+
+  margin: 10px;  /* and that, will result in a 10px gap */
+}
+
+.upper.mc /* multicol test */ {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 200px;
+
+}
+
+/* #grid {
+  display: grid;
+
+  height: 250px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px;
+  column-gap: 20px;
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+#grid > div {
+  flex: 1 1 auto;
+  border: 1px solid red;
+  background-color: white;
+} */
+
+</style>
+</head>
+<body>
+
+
+<br>
+<br>
+<div class="flex-container">
+  <!-- <div>welcome to my html file, this is the main page</div> -->
+  <P><h2>WELCOME TO MY MAIN PAGE OF CSS!</h2><p>ASSIGNMENT 2 CSS</p>
+  </p>
+
+</div>
+<br>
+<br>
+
+<!-- <div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div> -->
+
+<div class="upper">
+  <div><h2>Nav Bar</h2><br><br><a href="Link1.html">Link1</a><br><br><a href="Link2.html">Link2</a><br><br><a href="Link3.html">Link3</a></div>
+  <div><h2>Content</h2><br><p> ---> Developed a cat toggle switch - day and night</p><p>---> Developed an eye sleeper CSS toggle</p><p>
+    ---> Developed an accept cookies CSS toggle switch
+  </p></div><br>
+  <div><h2>Sidebar</h2><br><p>Page 1</p><p>Page 2</p> <p>Page 3</p></div>
+
+</div>
+<br><br>
+<div class="flex-container">Footer stuff, small text. All rights reserved, your mileage may vary, possible side effects include dizziness,
+  bleeding from the eyes, death, etc. We cannot be held responsible for the things we are responsible for.</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
